@@ -20,13 +20,13 @@ humberger.addEventListener('click',()=>{
         toggleMenu=false;
     }
 });
-function tagsClose(tag) {
-    tag.addEventListener('click',()=>{
+
+tags.forEach(tag=>{
+        tag.addEventListener('click',()=>{
         toggleMenu=true;
         Menu();
     }
-}
-tags.forEach(tagsClose());
+});
 //bookmark staff // declarations
 const bookmark = document.getElementById('bookmark');
 const bookmarkText = document.querySelector('#bookmark span');
