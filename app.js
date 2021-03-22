@@ -23,8 +23,9 @@ humberger.addEventListener('click',()=>{
 
 tags.forEach(tag=>{
         tag.addEventListener('click',()=>{
-        toggleMenu=true;
-        Menu();
+                toggleMenu=true;
+                Menu();
+                toggleMenu=false; 
     })
 });
 //bookmark staff // declarations
