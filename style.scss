@@ -1,0 +1,702 @@
+$font:'Commissioner', sans-serif;
+$cyan: hsl(176, 50%, 47%);
+$darkCyan: hsl(176, 72%, 28%);
+$black:black;
+$darkGrey:hsl(0, 0%, 48%);
+$fontSize: 16px;
+$bg:#fafafa;
+
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+body{
+    font-size: $fontSize;
+    font-family: $font;
+    background-color: $bg;
+    overflow-x: hidden;
+}
+
+.bg-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover;
+}
+.bg-image-mobile{
+    display: none;
+}
+.nav{
+    color: white;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 1rem;
+
+    
+    ul{
+        margin-top: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        width: 400px;
+        .item1{
+            margin-left: 1rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+            transition: all 200ms ease;
+            text-shadow: 4px 4px 7px rgba(243, 243, 243, 0.3);
+        }
+        a:hover{
+            border-bottom: 3px solid white;
+        }
+    }
+    .nav-humberger{
+        display: none;
+    }
+}
+//to remove the bootdtrap btn
+button{
+    padding: .75rem 2rem !important;
+    border-radius: 1.5rem !important;
+}
+p{
+    color: $darkGrey;
+}
+h1{
+    color: $black;
+}
+
+// Global work (return to fix this later)
+.bigParent{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%, 0%); 
+    height: fit-content;
+}
+.section{
+    background-color: white;
+    border-radius: .5rem;
+    position: relative;
+    padding: 1rem;
+    min-width: 50vw;
+}
+// the first section
+.s1{
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h1{
+        margin: 2rem 3rem 0.75rem;
+        font-size: 24pt;
+        text-transform: capitalize;
+    }
+    p{
+        margin: 0rem 4rem 2rem;
+        line-height: 150%;
+    }
+    text-align: center;
+    .flex-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        margin: 1rem 0 1.5rem ;
+        .btn{
+            background-color: $cyan ;
+            outline: none ;
+            color: white ;
+            border-radius: 2rem !important;
+            border: none ;
+            height: 56px;
+            transition: all .2s ease-in;
+            border:  1px solid #dadfe5;
+        }
+        .btn:hover{
+            background-color: $darkCyan !important;
+            box-shadow: 0px 7px 10px -2px rgba(0, 0, 0, 0.1) ;
+        }
+        
+        #bookmark{
+            background-color: #f4f4f4;
+            border-radius: 2rem;
+            cursor: pointer;
+            border:  1px solid #dadfe5;
+            .circle, .icon{
+                transition: all .2s ease-in;
+            }
+            
+            span{
+                font-weight: 500;
+                text-decoration: none;
+                padding:0 1rem;
+                color: #717171;
+                text-transform: capitalize;
+                margin-right: .5rem;
+                margin-left: -.5rem;
+                transition: all .2s ease-in;
+            }
+            
+            transition: all .2s ease-in;
+        }
+        #bookmark:hover{
+            box-shadow: 0px 7px 10px -2px rgba(0, 0, 0, 0.1) ;
+        }
+        
+        
+    }
+}
+// the secoond one s2 
+.s2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 1rem 4rem 0;
+    .flex-numbers{
+        display: grid;
+        grid-template-columns: repeat(3, 1Fr);
+        align-items: center;
+        width: 100%;
+        margin: 1rem 0 0;
+        .number{
+            padding-right: 2rem;
+            margin-right: 3rem ;
+        }
+        .number:nth-child(2){
+            padding-right: 3rem ;
+
+        }
+        .number:nth-child(1), .number:nth-child(2){
+            border-right: .5px solid #7171718a;
+        }
+    }
+    .percentage{
+        height: 10px;
+        width: 100%;
+        border-radius: 2rem ;
+        background-color: #f4f4f4;
+        
+        margin:1rem 0 2rem  ;
+    }
+    .line{
+        height: 10px;
+        width: 75%;
+        border-radius: 2rem ;
+        background-color: $cyan;
+    }
+}
+// the third section S3
+.s3{
+    margin-bottom: 4rem;
+    padding: 1rem 4rem 0;
+    h3{
+        margin: 2rem 0 ;
+    }
+    p{
+        margin: 0 0 2rem;
+    }
+    .card-grid{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1.5rem;
+        margin-bottom: 2rem;
+        .card{
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            padding: 1rem 1.7rem ;
+            vertical-align: center;
+            .top{
+                grid-column: 1/4;
+                grid-row: 1/2;
+                display: flex;
+                align-items:baseline;
+                justify-content: space-between;
+                .pledge{
+                    color: $cyan;
+                    border-bottom: 2px solid transparent;
+                }
+                .pledge:hover{
+                    border-bottom: 2px solid #3cb4acad;
+                }
+            }
+            .text{
+                grid-column:1/4;
+                grid-row: 2/3;
+            }
+            .items-left{
+                grid-column: 1/2;
+                grid-row: 3/4;
+                display: flex;
+                align-items:center;
+                p{
+                    margin-left: .5rem;
+                    transform: translateY(50%);
+                }
+            }
+            .submit{
+                grid-column: 3/4;
+                grid-row: 3/4;
+                background-color: $cyan ;
+                border: none ;
+                width: 80%;
+                transform: translateX(30%);
+                border-radius: 1.5rem;
+                text-decoration: none;
+                color: white;
+                padding: .75rem 1rem ;
+                transition: all .0001s ease;
+                    
+                
+            }
+            .submit:hover{
+                background-color: $darkCyan !important;
+                box-shadow: 0px 7px 10px -2px rgba(0, 0, 0, 0.1) ;
+            }
+            border-radius: .5rem;
+        }   
+        .card:nth-child(3){
+            position: relative;
+            .submit{
+                background-color: #717171 !important;
+            }
+            .useless{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.478);
+            }
+         }     
+    }
+}
+.hide{
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    height: 250vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.514);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back{
+    min-height: 80vh;
+    width: 50vw;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 2rem 3rem;
+    position:absolute;
+    margin-top: 8rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    .closeBack{
+        position: fixed;
+        right: 3%;
+        top: 3%;
+        cursor: pointer;
+    }
+    h3{
+        margin: 1rem 0  1.5rem;
+    }
+    .p{
+        margin-bottom: 1.5rem;
+    }
+   
+    .card-grid{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1.5rem;
+        margin-bottom: 1rem;
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            border-radius: .5rem;
+            border: 1px solid rgba(0,0,0,.125);
+            .div1, .div3{
+                display: flex;
+                align-items: center;
+            }
+            .div1{
+                padding: 1rem 1.7rem ;
+                display: flex;
+                align-items: flex-start;
+                .check{
+                    cursor: pointer;
+                    transform: translateY(20%);
+                    margin-right: 1rem;
+                    zoom: 120%;
+                }
+                
+                .div2{
+                    display: flex;
+                    flex-direction: column;
+                    .div4{
+                        margin-top: 0;
+                        margin-bottom: 1.5rem;
+                        font-size: .97rem;
+                        cursor: pointer;
+                    }
+                    .div3{
+                        display: flex;
+                        justify-content: space-between;
+                        vertical-align: center;
+                        align-items:center;
+                        margin-bottom: 1rem;
+                        .divTitle, .items-left{
+                            cursor: pointer;
+                            h4{
+                                margin-right: .5rem;
+                                font-size: 1.3rem;
+                                font-weight:500;
+                            }
+                            display: flex;
+                            align-items:baseline;
+                            height: min-content;
+                            transform: translateY(25%);
+                            .pledge{
+                                color: $cyan;
+                                border-bottom: 1px solid transparent;
+                                transition: all .15s ease;
+                            }        
+                            .pledge:hover{
+                                border-bottom: 1px solid $cyan;
+                            }                    
+                        }
+                        .divTitle{
+                            h4:hover{
+                                color: $cyan;
+                            }
+                        }
+                    }
+                }
+            }
+            .div5{
+                display: none;
+                justify-content: space-between;
+                align-items: baseline;
+                border-top: 1px solid rgba(0,0,0,.125);
+                padding: 1.2rem 1.5rem;
+                transition: all 0.2s ease-in-out;
+                opacity: 0;
+                .subPledge{
+                    border: 1px solid #7171718a ;
+                    padding: .65rem 1.3rem !important;
+                    padding-right: 1.8rem !important;
+                    color: black;
+                    font-weight: 600;
+                    span{
+                        margin-right: .5rem;
+                        color: #7171718a;
+                    }
+                    margin-right: .5rem;
+                }
+                .subPledge:hover{
+                    border: 1px solid $cyan ;
+                }
+                .submit{
+                    background-color: $cyan ;
+                    border: none;
+                    border-radius: 1.5rem;
+                    text-decoration: none;
+                    color: white;
+                    padding: .75rem 1rem ;
+                    transition: all .0001s ease;
+                    
+                }
+                .submit:hover{
+                    background-color: $darkCyan ;
+                    box-shadow: 0px 7px 10px -2px rgba(0, 0, 0, 0.1) ;
+                }
+            }
+        }   
+        .card:last-child{
+            position: relative;
+            filter: grayscale(1);
+            .submit{
+                background-color: #717171 !important;
+            }
+            .useless{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.478);
+            }
+         }     
+    }
+}
+.hideSuccess{
+    z-index: 5;
+    height: 280vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.514);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.successCard{
+    background-color: white;
+    width: 67.5vh;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:  2rem;
+    border-radius: .5rem;
+    position: absolute;
+    top: 10%;
+    *{
+        margin:  1rem  0 0;
+    }
+    svg{
+        margin-bottom: 2rem;
+    }
+    h3{
+        margin-bottom: 1rem;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    button{
+        background-color: $cyan;
+        border: none;
+        transition: all .15s ease;
+    }
+    button:hover{
+        background-color: $darkCyan;
+        box-shadow: 0px 7px 10px -2px rgba(0, 0, 0, 0.1) ;
+    }
+}
+@media (max-width:904px){
+    body{
+        width: 100vw;
+    }
+    .bg-image{
+        display: none;
+    }
+    .bg-image-mobile{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: cover;
+        height: 50vh;
+        width: 100%;
+    }
+    .nav{
+        padding: 0;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 1.7rem;
+        position: relative;
+        .nav-humberger{
+            display: block;
+            z-index: 3;
+            overflow-x: hidden;   
+            height: 40px;         
+            .line{
+                width: 30px;
+                height: 4px;
+                background-color: white;
+                margin-bottom: 5px;
+                border-radius: 5px;
+                transition: all .1s ease;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .items{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            color: black;
+            align-items: flex-start;
+            z-index: 2;
+            border-radius: .5rem;
+            width: 85vw;
+            transition: all .1s ease;
+            opacity: 0;
+            pointer-events: none;
+            box-shadow: 2px -54px 96px 105px rgba(0,0,0,0.3);
+            
+            li{
+                padding: 2rem ;
+                border-bottom: 1px solid rgba(0,0,0,.125);
+                width: 100%;
+                a{
+                    color: black;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+
+                .item1{
+                    margin-left: 0;
+                }
+            }
+        }
+        
+        .logo{
+            margin: 0;
+            z-index: 3;
+        }
+    }
+    .bigParent{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section{
+        width: 85vw;
+        padding: 1rem 2rem 0;
+    }
+    .s1{
+        padding:  1.5rem;
+        h1{
+            margin: 2rem 0rem;
+            font-weight: 500;
+            font-size: 18pt;
+        }
+        p{
+            margin: 1rem 0 2rem;
+        }
+        .flex-btn{
+            justify-content: space-evenly;
+            padding: 0;
+            .bookmarkText{
+                display: none;
+            }
+            .cardOpen{
+                padding: .75rem 2.25rem ;
+            }
+        }
+    }
+    .s2{
+        padding: 1rem 2rem 0;
+        .flex-numbers{
+            grid-template-columns: 1fr;
+            align-items: center;
+            padding: 0 5rem;
+            .number{
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                &:nth-child(2), &:nth-child(1){
+                    border-right: none;
+                    padding-right: 0;
+                    margin-bottom:1rem;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+                }
+                &:last-child{
+                    padding-top: .5rem;
+                }
+            }
+        }
+    }
+    .s3{
+        .card-grid{
+            .card{
+                padding: 2rem ;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                .top{
+                    flex-direction: column;
+                    .pledge{
+                        margin: 0 0 1rem;
+                    }
+                }
+                .submit{
+                    width: fit-content;
+                    transform: translateX(0);
+                    padding: .75rem 2rem;
+                }
+            }
+        }
+    }
+    .hide{
+        justify-content: center;
+        height: 385vh;
+    }
+    .back{
+        width: 85vw;
+        padding: 1.5rem 2rem;
+        .closeBack{
+            right: 5%;
+        }
+        .card{
+            .div1{
+                padding: 1rem ;
+                align-items: flex-start;
+                .check{
+                    transform: translateY(0) !important; 
+                    margin-right: .5rem !important;
+                    zoom: 230% !important;
+                    .checked, .checkedStroke{
+                        zoom: 230% !important;
+                    }
+                }
+                
+            }
+            .div2{
+                .divTitle{
+                    flex-direction: column;
+                }
+            }
+            .div5{
+                flex-direction: column;
+                align-items: center !important;
+                .buttons{
+                    justify-content: space-between;
+                    
+                }
+            }
+        }
+    }
+    .hideSuccess{
+        .successCard{
+            width: 85vw;
+            top: 8rem;
+        }
+    }
+}

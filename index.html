@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crowdFunding product</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="nav">
+        <svg class="logo" width="128" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M7.272 20c2.69 0 5.022-1.4 6.202-3.54L9.88 14.402c-.439.96-1.454 1.537-2.662 1.537-1.783 0-3.1-1.29-3.1-3.184 0-1.893 1.317-3.183 3.1-3.183 1.208 0 2.196.576 2.662 1.537l3.595-2.086c-1.18-2.113-3.54-3.512-6.202-3.512C3.101 5.51 0 8.666 0 12.755 0 16.845 3.101 20 7.272 20zm11.367-.384v-6.202c0-2.717 2.415-3.403 4.116-3.129V5.62c-1.728 0-3.567.878-4.116 2.717V5.895h-4.116v13.72h4.116zM30.116 20c4.034 0 7.272-3.156 7.272-7.245s-3.238-7.244-7.272-7.244c-4.034 0-7.272 3.155-7.272 7.244 0 4.09 3.238 7.245 7.272 7.245zm0-4.007c-1.784 0-3.156-1.29-3.156-3.238s1.372-3.238 3.156-3.238 3.156 1.29 3.156 3.238c0 1.949-1.372 3.238-3.156 3.238zm15.181 3.623l2.196-7.327 2.195 7.327h3.842l4.39-13.721h-4.39l-1.976 7.354-2.14-7.354h-3.842l-2.14 7.354-1.977-7.354h-4.39l4.39 13.72h3.842zM64.156 20c1.839 0 3.183-.631 4.089-1.674v1.29h4.116V.406h-4.116v6.778c-.906-1.042-2.25-1.673-4.089-1.673-3.595 0-6.559 3.155-6.559 7.244 0 4.09 2.964 7.245 6.559 7.245zm.823-3.897c-1.893 0-3.265-1.29-3.265-3.348s1.372-3.348 3.265-3.348c1.894 0 3.266 1.29 3.266 3.348s-1.372 3.348-3.266 3.348zm14.66 3.513v-9.77h2.552V5.895H79.64c0-1.592 1.016-2.058 2.552-1.921V.022c-4.555-.274-6.668 2.03-6.668 5.873h-1.839v3.951h1.839v9.77h4.116zm8.266.384c1.811 0 3.184-.659 3.925-1.674v1.29h4.116V5.895H91.83v7.491c0 1.949-1.043 2.827-2.553 2.827-1.317 0-2.387-.796-2.387-2.497V5.895h-4.116v8.424c0 3.705 2.36 5.681 5.131 5.681zm14.44-.384v-7.492c0-1.948 1.044-2.826 2.553-2.826 1.317 0 2.387.795 2.387 2.497v7.82h4.117v-8.424c0-3.705-2.36-5.68-5.132-5.68-1.811 0-3.183.658-3.924 1.673v-1.29h-4.117v13.722h4.117zm17.02.384c1.84 0 3.184-.631 4.09-1.674v1.29h4.116V.406h-4.116v6.778c-.906-1.042-2.25-1.673-4.09-1.673-3.594 0-6.558 3.155-6.558 7.244 0 4.09 2.964 7.245 6.559 7.245zm.824-3.897c-1.893 0-3.265-1.29-3.265-3.348s1.372-3.348 3.265-3.348c1.894 0 3.266 1.29 3.266 3.348s-1.372 3.348-3.266 3.348z" fill="#FFF" fill-rule="nonzero"/></svg>
+        
+        <ul class="items">
+            <li><a class="item1"href="#">about</a></li>
+            <li><a href="#">discover</a></li>
+            <li><a href="#">get started</a></li>
+        </ul>
+        <div class="nav-humberger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <img class="bg-image" src="./images/image-hero-desktop.jpg" alt="">
+    <img class="bg-image-mobile" src="./images/image-hero-mobile.jpg" alt="">
+    <div class="bigParent" id="app1">
+        <section class="section s1">
+            <svg class="logo" width="56" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#000" cx="28" cy="28" r="28"/><g fill-rule="nonzero"><path d="M15.565 28.565a1.93 1.93 0 012.606-.113l.122.113 10.142 10.142a1.93 1.93 0 01-2.606 2.84l-.122-.112-10.142-10.142a1.93 1.93 0 010-2.728z" fill="#444"/><path d="M36.19 17.48c1.006-.996 2.706-.34 2.805 1.026l.005.126v10.736c0 .9-.737 1.629-1.646 1.629a1.64 1.64 0 01-1.642-1.507l-.005-.122v-6.805l-8.043 7.957c-1.006.996-2.707.34-2.806-1.026l-.004-.126v-6.805L16.81 30.52a1.66 1.66 0 01-2.224.095l-.105-.095a1.616 1.616 0 01-.096-2.2l.096-.103L25.336 17.48c1.006-.996 2.707-.34 2.806 1.026l.004.126v6.804l8.043-7.956z" fill="#FFF"/></g></g></svg>            <h1>mastercraft bamboo monitor riser</h1>
+            <p>A beautiful & handercrafted monitor stand to reduce neck and eye strain.</p>
+            <div class="flex-btn">
+                <button class="btn btn-success cardOpen">Back this project</button>
+                <div id="bookmark"> 
+                    <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle class="circle" fill="#2F2F2F" cx="28" cy="28" r="28"/><path class="icon" fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
+                    <span class="bookmarkText "href="#"> bookmark</span>
+                </div>
+            </div>
+        </section>
+        <section class="section s2">
+            <div class="flex-numbers">
+                <div class="number">
+                    <h1>$89,914</h1>
+                    <p>of $100,000 backed</p>
+                </div>
+                <div class="number">
+                    <h1>5,007</h1>
+                    <p>total backers</p>
+                </div>
+                <div class="number">
+                    <h1>56</h1>
+                    <p>days left</p>
+                </div>
+            </div>
+            <div class="percentage">
+                <div class="line"></div>
+            </div>
+        </section>
+        <section class="section s3">
+            <h3>About this project</h3>
+            <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+            <p> Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+            <div class="card-grid">
+                <div class="card"> 
+                    <div class="top">
+                        <h5>Bamboo Stand</h5> 
+                        <p class="pledge"> Pledge $25 or more </p>
+                    </div>
+                    <p class="text">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+                    <div class="items-left">
+                        <h4>101</h4>
+                        <p>left</p>
+                    </div>
+                    <a  href="#hideSuccess" class="submit submitt btn btn-success">Select Reward</a>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <h5>Black Edition Stand</h5> 
+                        <p class="pledge"> Pledge $75 or more </p>
+                    </div>
+                    <p class="text">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+                    <div class="items-left">
+                        <h4>64</h4>
+                        <p>left</p>
+                    </div>
+                    <a  href="#hideSuccess" class="submit submitt btn btn-success">Select Reward</a>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <h5>Mahogany Special Edition</h5> 
+                        <p class="pledge"> Pledge $200 or more </p>
+                    </div>
+                    <p class="text">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+                    <div class="items-left">
+                        <h4>0</h4>
+                        <p>left</p>
+                    </div>
+                    <a  href="#hideSuccess" class="submit submitt btn btn-success">Select Reward</a>
+                    <div class="useless"></div>
+                </div>
+            </div>
+        </section>    
+    </div>
+    <div class="hide" id="hide">
+        <div class=" back">
+            <svg class="closeBack" width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z" fill="#000" fill-rule="evenodd" opacity=".4"/></svg>
+            <h3>Back this project</h3>
+            <p class="p">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="div1">
+                        <svg class="check" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="check-fill" d="M31 16.5C31 25.0604 24.2843 32 16 32C7.71573 32 1 25.0604 1 16.5C1 7.93959 7.71573 1 16 1C24.2843 1 31 7.93959 31 16.5Z" fill="white"/>
+                            <path class="checked-stroke" d="M16 32.5C24.5757 32.5 31.5 25.321 31.5 16.5C31.5 7.67902 24.5757 0.5 16 0.5C7.42426 0.5 0.5 7.67902 0.5 16.5C0.5 25.321 7.42426 32.5 16 32.5Z" stroke="#717171" stroke-opacity="0.7"/>
+                            <path  class="checked" d="M25 16C25 20.9706 20.9706 25 16 25C11.0294 25 7 20.9706 7 16C7 11.0294 11.0294 7 16 7C20.9706 7 25 11.0294 25 16Z" fill="white"/>
+                        </svg>
+                        <div class="div2">
+                            <div class="div3">
+                                <div class="divTitle">
+                                    <h4>Pledge with no reward </h4> 
+                                    <p class="pledge"> </p>
+                                </div>
+                                <div class="items-left">
+                                    <h4></h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="div4">Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>    
+                        </div>    
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div1">
+                        <svg class="check" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="check-fill" d="M31 16.5C31 25.0604 24.2843 32 16 32C7.71573 32 1 25.0604 1 16.5C1 7.93959 7.71573 1 16 1C24.2843 1 31 7.93959 31 16.5Z" fill="white"/>
+                            <path class="checked-stroke" d="M16 32.5C24.5757 32.5 31.5 25.321 31.5 16.5C31.5 7.67902 24.5757 0.5 16 0.5C7.42426 0.5 0.5 7.67902 0.5 16.5C0.5 25.321 7.42426 32.5 16 32.5Z" stroke="#717171" stroke-opacity="0.7"/>
+                            <path  class="checked" d="M25 16C25 20.9706 20.9706 25 16 25C11.0294 25 7 20.9706 7 16C7 11.0294 11.0294 7 16 7C20.9706 7 25 11.0294 25 16Z" fill="white"/>
+                        </svg>
+                        <div class="div2">
+                            <div class="div3">
+                                <div class="divTitle">
+                                    <h4>Bamboo Stand</h4> 
+                                    <p class="pledge"> Pledge $25 or more </p>
+                                </div>
+                                <div class="items-left">
+                                    <h4>101</h4>
+                                    <p>left</p>
+                                </div>
+                            </div>
+                            <p class="div4">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>    
+                        </div>    
+                    </div>
+                    <div class="div5">
+                        <p>Enter your pledge</p>
+                        <div class="buttons">
+                            <button class="btn subPledge "><span>$</span> 25</button>
+                            <a href="#hideSuccess"  class="submit closeHidee btn btn-success">Continue</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    
+                    <div class="div1">
+                        <svg class="check" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="check-fill" d="M31 16.5C31 25.0604 24.2843 32 16 32C7.71573 32 1 25.0604 1 16.5C1 7.93959 7.71573 1 16 1C24.2843 1 31 7.93959 31 16.5Z" fill="white"/>
+                            <path class="checked-stroke" d="M16 32.5C24.5757 32.5 31.5 25.321 31.5 16.5C31.5 7.67902 24.5757 0.5 16 0.5C7.42426 0.5 0.5 7.67902 0.5 16.5C0.5 25.321 7.42426 32.5 16 32.5Z" stroke="#717171" stroke-opacity="0.7"/>
+                            <path  class="checked" d="M25 16C25 20.9706 20.9706 25 16 25C11.0294 25 7 20.9706 7 16C7 11.0294 11.0294 7 16 7C20.9706 7 25 11.0294 25 16Z" fill="white"/>
+                        </svg>
+                        <div class="div2">
+                            <div class="div3">
+                                <div class="divTitle">
+                                    <h4>Black Edition Stand </h4> 
+                                    <p class="pledge"> Pledge $75 or more </p>
+                                </div>
+                                <div class="items-left">
+                                    <h4>64</h4>
+                                    <p>left</p>
+                                </div>
+                            </div>
+                            <p class="div4">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>    
+                        </div>    
+                    </div>
+                    <div class="div5">
+                        <p>Enter your pledge</p>
+                        <div class="buttons">
+                            <button class="btn subPledge "><span>$</span> 75</button>
+                            <a href="#hideSuccess" class="submit closeHidee btn btn-success">Continue</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    
+                    <div class="div1">
+                        <svg class="check" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="check-fill" d="M31 16.5C31 25.0604 24.2843 32 16 32C7.71573 32 1 25.0604 1 16.5C1 7.93959 7.71573 1 16 1C24.2843 1 31 7.93959 31 16.5Z" fill="white"/>
+                            <path class="checked-stroke" d="M16 32.5C24.5757 32.5 31.5 25.321 31.5 16.5C31.5 7.67902 24.5757 0.5 16 0.5C7.42426 0.5 0.5 7.67902 0.5 16.5C0.5 25.321 7.42426 32.5 16 32.5Z" stroke="#717171" stroke-opacity="0.7"/>
+                            <path  class="checked" d="M25 16C25 20.9706 20.9706 25 16 25C11.0294 25 7 20.9706 7 16C7 11.0294 11.0294 7 16 7C20.9706 7 25 11.0294 25 16Z" fill="white"/>
+                        </svg>
+                        <div class="div2">
+                            <div class="div3">
+                                <div class="divTitle">
+                                    <h4>Mahogany Special Edition</h4> 
+                                    <p class="pledge"> Pledge $200 or more </p>
+                                </div>
+                                <div class="items-left">
+                                    <h4>0</h4>
+                                    <p>left</p>
+                                </div>
+                            </div>
+                            <p class="div4">ou get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>    
+                        </div>    
+                    </div>
+                    <div class="useless"></div>
+                </div>
+            </div>             
+        </div>     
+    </div>
+    <div class="hideSuccess" id="hideSuccess">
+        <div class="successCard">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd"><circle fill="#3CB3AB" cx="32" cy="32" r="32"/>
+                    <path stroke="#FFF" stroke-width="5" d="M20 31.86L28.093 40 44 24"/></g>
+            </svg> 
+            <h4>Thanks for your support!</h4>           
+            <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
+            <button class="btn btn-success closeSuccess">Got it!</button>
+        </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+</body>
+</html>
