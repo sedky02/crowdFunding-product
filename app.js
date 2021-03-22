@@ -25,7 +25,7 @@ tags.forEach(tag=>{
         tag.addEventListener('click',()=>{
         toggleMenu=true;
         Menu();
-    }
+    })
 });
 //bookmark staff // declarations
 const bookmark = document.getElementById('bookmark');
