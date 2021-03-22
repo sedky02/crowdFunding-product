@@ -2,16 +2,16 @@
 const humberger = document.querySelector('.nav-humberger');
 const line = document.querySelectorAll('.nav-humberger .line');
 const ul = document.querySelector('.nav .items');
+const tags = document.querySelectorAll('.nav .items a');
 let toggleMenu= false;
-humberger.addEventListener('click',()=>{
-    function Menu(){
+function Menu(){
         const timeMenu = gsap.timeline({ defaults: { ease: "power1.easeInOut" } });
         timeMenu.to(line[1], 0.05, {marginBottom:toggleMenu ? "5px": "0", x:toggleMenu ? "0":  " -100%"})
         .to(line[0], 0.1, {marginBottom:toggleMenu ? "5px":"0", rotation:toggleMenu ? "0":  "45", y:toggleMenu ? "0": "10px"},"-=0.05")
         .to(line[2], 0.1, {rotation: toggleMenu ? "0": " 135", y:toggleMenu ? "0": "2px"},"-=0.15")
-        .to(ul, 0.3, {opacity: toggleMenu ? "0": " 1", pointerEvents:toggleMenu ? "none": "all"},"-=0.15")
-        
-    };
+        .to(ul, 0.3, {opacity: toggleMenu ? "0": " 1", pointerEvents:toggleMenu ? "none": "all"},"-=0.15")        
+};
+humberger.addEventListener('click',()=>{
     if(toggleMenu==false){
         Menu();
         toggleMenu=true;
@@ -20,7 +20,13 @@ humberger.addEventListener('click',()=>{
         toggleMenu=false;
     }
 });
- 
+function tagsClose(item) {
+    item.addEventListener('click',()=>{
+        toggleMenu=true;
+        Menu();
+    }
+}
+tags.forEach(tagsClose);
 //bookmark staff // declarations
 const bookmark = document.getElementById('bookmark');
 const bookmarkText = document.querySelector('#bookmark span');
