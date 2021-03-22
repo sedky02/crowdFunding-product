@@ -26,7 +26,7 @@ function tagsClose(item) {
         Menu();
     }
 }
-tags.forEach(tagsClose);
+tags.forEach(tagsClose(item));
 //bookmark staff // declarations
 const bookmark = document.getElementById('bookmark');
 const bookmarkText = document.querySelector('#bookmark span');
