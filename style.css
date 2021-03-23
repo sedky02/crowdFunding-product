@@ -58,8 +58,7 @@ body {
       justify-content: space-around;
   list-style: none;
   width: 400px;
-  opacity:1 !important;
-}
+ }
 
 .nav ul .item1 {
   margin-left: 1rem;
