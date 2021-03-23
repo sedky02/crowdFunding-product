@@ -30,6 +30,8 @@ tags.forEach(tag=>{
                         const Time = gsap.timeline({ defaults: { ease: "power1.easeInOut" } });
                         Time.to(ul, 0.3, {opacity: " 1", pointerEvents: "all"}); 
                 } else {
+                        const Time = gsap.timeline({ defaults: { ease: "power1.easeInOut" } });
+                        Time.to(ul, 0.3, {opacity: " 0", pointerEvents: "none"}); 
                         toggleMenu=true;
                         Menu();
                         toggleMenu=false;
