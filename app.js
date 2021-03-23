@@ -20,14 +20,23 @@ humberger.addEventListener('click',()=>{
         toggleMenu=false;
     }
 });
-
+if(window.innerWidth < 904){
+        ul.style.opacity ="0";
+        ul.style.pointerEvents ="none";
+} else {
+        ul.style.opacity ="1";
+        ul.style.pointerEvents ="all";
+}
 tags.forEach(tag=>{
         tag.addEventListener('click',()=>{
                 if(window.innerWidth < 904){
                         toggleMenu=true;
                         Menu();
                         toggleMenu=false;
-                }                
+                }  else {
+                        ul.style.opacity ="1";
+                        ul.style.pointerEvents ="all";
+                }              
     })
 });
 //bookmark staff // declarations
