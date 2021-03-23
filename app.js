@@ -25,7 +25,9 @@ tags.forEach(tag=>{
         tag.addEventListener('click',()=>{
                 toggleMenu=true;
                 Menu();
-                toggleMenu=false; 
+                toggleMenu=false;
+                const Time = gsap.timeline({ defaults: { ease: "power1.easeInOut" } });
+                Time.to(ul, 0.3, {opacity: toggleMenu ? "0": " 1", pointerEvents:toggleMenu ? "none": "all"}); 
     })
 });
 //bookmark staff // declarations
