@@ -23,11 +23,18 @@ humberger.addEventListener('click',()=>{
 
 tags.forEach(tag=>{
         tag.addEventListener('click',()=>{
-                toggleMenu=true;
-                Menu();
-                toggleMenu=false;
-                const Time = gsap.timeline({ defaults: { ease: "power1.easeInOut" } });
-                Time.to(ul, 0.3, {opacity: " 1", pointerEvents: "all"}); 
+                if(window.innerWidth > 904){
+                        toggleMenu=true;
+                        Menu();
+                        toggleMenu=false;
+                        const Time = gsap.timeline({ defaults: { ease: "power1.easeInOut" } });
+                        Time.to(ul, 0.3, {opacity: " 1", pointerEvents: "all"}); 
+                } else {
+                        toggleMenu=true;
+                        Menu();
+                        toggleMenu=false;
+                }
+                
     })
 });
 //bookmark staff // declarations
